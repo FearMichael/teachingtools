@@ -1,0 +1,70 @@
+@keyframes opacityPulse {
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+}
+
+@keyframes newAnimation {
+    0% {right: 0px; top: 0px}
+    50% {right: 100px; top: 0px}
+    100% {right: 200; top: 0px}
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+hr {
+    height: 10px;
+    border: none;
+    background-image: linear-gradient(to right, white, blue 50%, white 100%);
+}
+
+.btn-large:hover {
+    clip-path: circle(50%)
+}
+
+.rectangle:hover {
+    fill: purple;
+    /* transform: rotate(90deg);
+    transform-origin: 50% 50%; */
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
+}
+
+div > p::first-letter {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.input-field > input:focus {
+    transform: scale(1.1);
+    background-color: gray !important; 
+}
+a:hover {
+    /* transform: scale(-1, 1);
+    animation: newAnimation 2s; */
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    animation-iteration-count: infinite;
+    color: black;
+}
+
+div.card:hover {
+    transform: scale(1.1)
+
+}
+
+div.card {
+    animation: rotating 0.5s 5 linear;
+}
+
+img.smallPic {
+    display: none;
+}

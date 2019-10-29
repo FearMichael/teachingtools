@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Welcome
+        style(type="text/css").
+            .header {
+                background: #A0B9BF;
+                font-weight: 500;
+                padding: 1rem;
+                text-align: center;
+            }
+            .bodyText {
+                font-size: 14px;
+            }
+            .login {
+                color: white;
+                background: #A0B9BF;
+                border-radius: 2rem;
+                padding: 0.5rem 2rem;
+                text-decoration: none;
+            }
+            .buttonContainer {
+                text-align: center;
+            }
+    body
+    h1(class="header") Welcome to Daily Dash
+    h3 #{userName}, thanks for joining!
+    p(class="bodyText") Your daily routine just got easier! 
+    p(class="bodyText") Just log in, and use the various search areas to gain information for your daily needs.
+    div(class="buttonContainer")
+        a(href="https://reactdailydash.herokuapp.com/" class="login") Log In
