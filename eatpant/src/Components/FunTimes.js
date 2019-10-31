@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 
 class Fun extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            number: 0
-        };
+    state = {
+        number: 0
     }
 
     clickyTime = () => {
