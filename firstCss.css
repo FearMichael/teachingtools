@@ -1,0 +1,29 @@
+div.bigRedBox {
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+}
+
+div.bigBox {
+    height: 800px
+}
+
+img.coolPic {
+    border-radius: 25%;
+}
+
+nav.navbar {
+    /* display: inline-block;
+     */
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+nav.navbar a {
+    padding: 5rem;
+}
+
+p.centerme {
+    /* float: left; */
+    margin: 0 auto;
+}

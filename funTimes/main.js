@@ -1,6 +1,6 @@
 // const getStuff = require("./objects");
 
-const axios = require("axios");
+// const axios = require("axios");
 
 // const postCall = require("./objects");
 // const calls = require("./")
@@ -44,17 +44,17 @@ const axios = require("axios");
 
 // console.log(search("po", arr));
 
-// function Friend(firstName, lastName, favFood) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.favFood = favFood;
-//     this.favColor = null;
-//     this.birthday = null;
-//     this.sayHello = function () {
-//         console.log(`${this.firstName} says Heeey!!!`);
-//     };
-//     this.emotions = ["happy", "sad", "mad"];
-// };
+function Friend(firstName, lastName, favFood) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.favFood = favFood;
+    this.favColor = null;
+    this.birthday = null;
+    this.sayHello = function () {
+        console.log(`${this.firstName} says Heeey!!!`);
+    };
+    this.emotions = ["happy", "sad", "mad"];
+};
 
 // console.log(new Friend("Jeremy", "Muniak", "Ice Cream Sandwiches"));
 
@@ -65,10 +65,10 @@ const axios = require("axios");
 // console.log("jeremy 1", jeremy);
 // jeremy.favColor = "turqoise";
 
-// console.log("jeremy 2", jeremy);
-// jeremy.angry = function () {
-//     console.log("Me mad!");
-// };
+console.log("jeremy 2", jeremy);
+jeremy.angry = function () {
+    console.log("Me mad!");
+};
 
 // jeremy.angry();
 
