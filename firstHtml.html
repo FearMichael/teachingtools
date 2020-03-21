@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
     <link rel="stylesheet" href="firstCss.css">
 </head>
 
 <body>
+
+
+    <div id="app">
+        {{ message }}
+    </div>
+
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        })
+    </script>
+
     <!-- <h1>Hello There!</h1>
     <div class="bigBox">
         <div class="bigRedBox">
@@ -18,7 +36,7 @@
         </div>
     </div> -->
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <a>
             About
         </a>
@@ -44,7 +62,7 @@
         flank strip steak pork belly tongue. Turkey beef burgdoggen brisket doner alcatra chuck turducken chislic
         sirloin beef ribs strip steak. Salami pig chislic, sirloin jowl biltong pastrami. Burgdoggen t-bone short loin
         doner tenderloin ball tip.
-    </p>
+    </p> -->
 
 
 
