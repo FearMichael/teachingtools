@@ -1,3 +1,73 @@
+const timer;
+
+// const location;
+
+const questions = [
+    {
+        question: "",
+        answers: [],
+        correctAnswer: [
+            {
+                another: {
+                    andAnother: []
+                }
+            }
+        ]
+    }
+];
+
+let time = 90;
+
+
+function updateView(questions, index) {
+    // something happens
+
+    const selectedQuestion = questions[index];
+    // build out question
+    // const buttons = answers.map()
+    questionText = selectedQuestion.question;
+
+    questionBox.append(question);
+
+}
+
+
+// pseudo code 
+// i need a timer for scores
+// need to be able to clear the time give X scenarios
+// need to subtract from the time
+// continually show time remaining
+
+function removeTimer() {
+    clearInterval(timer);
+}
+
+function myFunction() {
+    timer = setInterval(function () {
+        // Something happens here
+        time--;
+        //update the view
+        updateView();
+        // first run it would be 89
+        console.log(time);
+    }, 1000);
+}
+
+function wrongAnswer() {
+    time -= 10;
+    // clearInterval(timer);
+    // myFunction();
+}
+
+
+
+
+
+
+
+
+
+
 // const portfolioInfo = [
 //     {
 //         name: "Bench Strength",
