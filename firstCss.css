@@ -1,7 +1,45 @@
-div.bigRedBox {
+html, body {
+    height: 2000px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    background-color: blue;
+    height: 125px;
+    width: 375px;
+    margin: 5px 10px 12px 7px;
+    /* margin-left: 200px; */
+}
+
+div.big-red-box {
     background-color: rgba(255, 0, 0, 0.5);
-    height: 50%;
-    width: 50%;
+    height: 500px;
+    width: 200px;
+}
+
+section.relative {
+    position: relative;
+}
+
+div.big-red-box.my-class {
+    border: 5px solid purple;
+    border-radius: 25%;
+    position: absolute;
+    top: 25px;
+    /* top: -50px; */
+    /* right: 200px;
+    bottom: 0px; */
+    
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    height: 50px;
 }
 
 div.bigBox {
@@ -27,3 +65,4 @@ p.centerme {
     /* float: left; */
     margin: 0 auto;
 }
+
