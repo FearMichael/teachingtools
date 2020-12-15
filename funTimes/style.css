@@ -68,3 +68,13 @@ div.card {
 img.smallPic {
     display: none;
 }
+
+/*  */
+
+div.custom-class, div.custom-class button {
+    background-color: aquamarine;
+}
+
+div.custom-class div.accordion-body {
+    padding: 2em;
+}
