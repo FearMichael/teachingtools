@@ -9,7 +9,7 @@
     "office-ui-fabric-react": "^7.59.3",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
-    "react-dev-utils": "^9.1.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
