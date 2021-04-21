@@ -1,0 +1,15 @@
+{
+  "name": "nodeintro",
+  "version": "1.0.0",
+  "description": "nothing special",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "lodash": "^4.17.20"
+  }
+}
