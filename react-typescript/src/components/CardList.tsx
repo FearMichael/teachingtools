@@ -1,16 +1,39 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import { INames } from "../App";
+import axios from "axios";
 
 export interface ICardListProps {
   names: INames[];
   anotherThing: string;
 };
 
+export interface IPeople {
+  id: number;
+  name: string;
+}
+
 const CardList = ({ names, anotherThing }: ICardListProps) => {
+
+
+  const [people, setPeople] = useState([] as IPeople[]);
+
+  const [myObj, setObj] = useState({});
+
+  // setPeople(["joe", "cathy"]);
 
   console.log({ names });
   console.log({ anotherThing });
+
+  const fetchPeople = () => {
+    axios.get("https://jsonplaceholder.typicode.com/users").then(({ data }) => setPeople(data)).catch(console.log);
+  };
+
+  useEffect(() => {
+    fetchPeople();
+    setObj({ name: "george", id: "something" });
+    setObj({ ...myObj, name: "Billy" });
+  }, []);
 
   return (<div>
     {
@@ -26,6 +49,9 @@ const CardList = ({ names, anotherThing }: ICardListProps) => {
           </Card.Body>
         </Card>
       ))
+    }
+    {
+      people.map((e) => (<p key={e.id}>{e.name}</p>))
     }
   </div>
   )
