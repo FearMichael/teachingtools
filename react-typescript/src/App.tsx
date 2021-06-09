@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import dayjs from "dayjs";
 import { Button, Card } from 'react-bootstrap';
-import CardList from './components/CardList';
+import CardList from './components/shared/CardList/CardList';
 
 export interface INames {
   name: string,
