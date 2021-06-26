@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import dayjs from "dayjs";
 import { Button, Card } from 'react-bootstrap';
-import CardList from './components/CardList';
+import CardList from './components/shared/CardList/CardList';
 
 export interface INames {
   name: string,
@@ -11,7 +11,7 @@ export interface INames {
 }
 
 function App() {
-  
+
   const myVal = 31;
   const names: INames[] = [{ name: "joe", age: 4.5 }, { name: "ryan", age: 47 }, { name: "Toni", age: 22 }];
   const anotherThing = "Hiiii!!!!";
@@ -33,7 +33,7 @@ function App() {
         </a>
       </header>
       <h1>The Peeps @ {dayjs().format("MM/DD/YYYY")}!</h1>
-      <CardList names={names} anotherThing={anotherThing}  />
+      <CardList names={names} anotherThing={anotherThing} />
     </div>
   );
 }

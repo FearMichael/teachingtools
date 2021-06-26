@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CardList from './components/CardList';
+import CardList from './components/shared/CardList/CardList';
 
 ReactDOM.render(
   <React.StrictMode>
