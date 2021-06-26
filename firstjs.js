@@ -1,19 +1,7 @@
-
-// const todos = [
-//     {
-//         completed: false,
-//         title: "learn to type"
-//     },
-//     {
-//         completed: false,
-//         title: "learn to type"
-//     }
-// ]
-// todos[0]
-
-const obj = {
-    name: "Mike",
-    number: 12321,
+const data = {
+    id: "5b3907e2-348a-4159-8222-46209c2a643b",
+    firstName: "Mike",
+    lastName: "Fearnley",
     todos: [
         {
             completed: false,
@@ -22,48 +10,70 @@ const obj = {
         {
             completed: false,
             title: "learn to type"
-        }
-    ]
+        },
+    ],
+    meta: {
+        isActive: true,
+        location: "US"
+    },
 }
 
-obj.todos.forEach(function (e) {
-    console.log(e);
-})
+const todos = [
+    {
+        completed: false,
+        title: "learn to type"
+    },
+    {
+        completed: false,
+        title: "learn to type"
+    },
+]
 
-obj.todos[1]
+// console.log(todos[0]);
 
-const loopMe = function (data) {
-    data.forEach(function (e) {
-        // console.log(e);
-        console.log(e.name)
-        console.log(e.phone);
-    })
-}
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(json => {
-        console.log(json);
-        loopMe(json)
-    });
+// console.log(data.meta.isActive);
 
-fetch('https://jsonplaceholder.typicode.com/users/1')
-    .then(response => response.json())
-    .then(json => console.log(json));
+// console.log(data.todos[0]);
 
-const heath = {
-    name: "Heath",
-    favoriteFood: "Tacos",
-    role: "Student"
-};
+// todos.forEach(function (e) {
+//     console.log(e);
+// });
 
-const mike = {
-    name: "Mike",
-    favoriteFood: "Pizza",
-    role: "TA"
-};
+// data.todos[1]
 
-const myArr = [];
-const stringArr = [];
+// const loopMe = function (data) {
+//     data.forEach(function (e) {
+//         // console.log(e);
+//         console.log(e.name)
+//         console.log(e.phone);
+//     })
+// }
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(response => response.json())
+//     .then(json => {
+//         console.log(json);
+//         loopMe(json)
+//     });
+
+// fetch('https://jsonplaceholder.typicode.com/users/1')
+//     .then(response => response.json())
+//     .then(json => console.log(json));
+
+// const heath = {
+//     name: "Heath",
+//     favoriteFood: "Tacos",
+//     role: "Student"
+// };
+
+// const mike = {
+//     name: "Mike",
+//     favoriteFood: "Pizza",
+//     role: "TA"
+// };
+
+// const myArr = [];
+// const stringArr = [];
 
 // arr = []
 // obj = {}
@@ -78,3 +88,20 @@ const stringArr = [];
 
 
 // console.log(myArr);
+
+// function someFunc() {
+//     return "hey";
+// }
+
+const fullName = (firstName, lastName) => {
+    // return firstName + " " + lastName;
+    const name = `${firstName} ${lastName}`;
+
+    return name;
+}
+
+const myName = fullName("Marco", "Polo");
+const anotherName = fullName("Alpha", "Romeo");
+
+console.log(myName);
+console.log(anotherName);
