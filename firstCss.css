@@ -1,17 +1,17 @@
 html, body {
     height: 2000px;
     width: 100%;
-    padding: 0px;
+    padding: 25px;
     margin: 0px;
 }
 
-div {
+/* div {
     background-color: blue;
     height: 125px;
     width: 375px;
     margin: 5px 10px 12px 7px;
-    /* margin-left: 200px; */
-}
+    
+} */
 
 div.big-red-box {
     background-color: rgba(255, 0, 0, 0.5);
@@ -66,3 +66,13 @@ p.centerme {
     margin: 0 auto;
 }
 
+div.my-simple-box {
+    /* padding: 35px 25px 15px 25px;
+    margin: 30px;
+    border: 3px solid purple;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-around;
+}
