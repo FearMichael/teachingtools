@@ -33,7 +33,8 @@ function App() {
         </a>
       </header>
       <h1>The Peeps @ {dayjs().format("MM/DD/YYYY")}!</h1>
-      <CardList names={names} anotherThing={anotherThing}  />
+      <CardList names={names} anotherThing={anotherThing}  /> 
+      {/* cardList({names, anotherThing}) */}
     </div>
   );
 }

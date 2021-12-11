@@ -13,7 +13,13 @@ html, body {
     
 } */
 
-div.big-red-box {
+.some-class div.big-red-box {
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 500px;
+    width: 200px;
+}
+
+div .big-red-box {
     background-color: rgba(255, 0, 0, 0.5);
     height: 500px;
     width: 200px;

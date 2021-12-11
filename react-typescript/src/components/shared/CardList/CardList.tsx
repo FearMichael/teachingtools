@@ -2,6 +2,7 @@ import React, { ReactNode, useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import { INames } from "../../../App";
 import axios from "axios";
+import { formatDate } from "../../../utils/pipes.utils";
 
 export interface ICardListProps {
   names: INames[];
@@ -18,6 +19,8 @@ const CardList = ({ names, anotherThing }: ICardListProps) => {
   const [state, setState] = useState<IPeople[] | null>(null);
   const [list, setList] = useState<string[]>([]);
   const [count, setCount] = useState<number>(0);
+  
+  const now = new Date().toDateString();
 
   const fetchPeople = () => {
     axios.get("https://jsonplaceholder.typicode.com/users").then(({ data }) => setState(data)).catch(console.log);
@@ -49,6 +52,7 @@ const CardList = ({ names, anotherThing }: ICardListProps) => {
 
   return (
     <div className="card-list">
+      <p>{formatDate(now, "MM/DD/YYYY hh:mm a")}</p>
       <h3>{count}</h3>
       {
         names.map((e, i) => (
@@ -76,32 +80,32 @@ const CardList = ({ names, anotherThing }: ICardListProps) => {
 
 export default CardList;
 
-class FakeComponent extends React.Component {
+// class FakeComponent extends React.Component {
 
-  constructor(props) { }
+//   constructor(props) { }
 
-  state = {
-    someValue: 123,
-    anotherVal: "hi"
-  };
+//   state = {
+//     someValue: 123,
+//     anotherVal: "hi"
+//   };
 
-  getSomeData() {
+//   getSomeData() {
 
-    const newData = {};
-    // get info async
-    this.setState({ ...this.state, ...newdata })
-  }
+//     const newData = {};
+//     // get info async
+//     this.setState({ ...this.state, ...newdata })
+//   }
 
-  render() {
-    const someVal = "hey there";
+//   render() {
+//     const someVal = "hey there";
 
-    return (
-      <>
-        <h2>{this.state.someValue}</h2>
-      </>
-    )
-  }
+//     return (
+//       <>
+//         <h2>{this.state.someValue}</h2>
+//       </>
+//     )
+//   }
 
-}
+// }
 
 // export FakeComponent;
